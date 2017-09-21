@@ -1,14 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
+import DisplayingCounter from "../components/DisplayingCounter";
+import Controller from "../components/controller";
 
-class ControlCounter extends Component {
-    render () {
-        return (
-            <div>
-                <button className="btn btn-primary">+</button>
-                <button className="btn btn-primary">-</button>
-            </div>
-        );
-    }
+let ControlCounter = () => {
+
+    return (
+        <div>
+            <Controller/>
+            <DisplayingCounter/>
+        </div>
+    );
 }
 
 export default ControlCounter;
