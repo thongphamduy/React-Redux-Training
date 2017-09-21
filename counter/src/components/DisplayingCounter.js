@@ -1,12 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
+import {connect} from "react-redux";
 
-class DisplayingCounter extends Component {
+let DisplayingCounter = ({value}) => {
+    return (
+        <div>{value}</div>
+    );
+};
 
-    render () {
-        return (
-            <div>{this.props.number}</div>
-        );
-    }
-}
+const mapStateToProps = state => {
+    return ({
+        value: DisplayingCounter(state.value)
+    });
+};
 
-export default DisplayingCounter;
+export default DisplayingCounter = connect(mapStateToProps)(DisplayingCounter);
