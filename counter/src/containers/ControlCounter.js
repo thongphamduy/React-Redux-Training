@@ -2,25 +2,26 @@ import React from 'react';
 import { connect } from 'react-redux'
 import DisplayingCounter from "../components/DisplayingCounter";
 import Controller from "../components/controller";
-import {increateNumber, decreateNumber} from "../actions/ActionCounter";
+import {increateNumber, decreateNumber, resetCounter} from "../actions/ActionCounter";
 
-let ControlCounter = ({ value, increateNumber, decreateNumber }) => {
+let ControlCounter = ({ valuePassToComps, tang, giam }) => {
     return (
         <div>
-            <Controller increateNumber={increateNumber} decreateNumber={decreateNumber} />
-            <DisplayingCounter value={value} />
+            <Controller increateNumber={tang} decreateNumber={giam} resetCounter={reset}/>
+            <DisplayingCounter value={valuePassToComps} />
         </div>
     );
-}
+};
 
 const mapStateToProps = state => ({
-    value: state.value
-})
+    valuePassToComps: state.value
+});
 
 const mapDispatchToProps = ({
-    increateNumber,
-    decreateNumber
-})
+    tang: increateNumber,
+    giam: decreateNumber,
+    reset: resetCounter
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(ControlCounter)
 
