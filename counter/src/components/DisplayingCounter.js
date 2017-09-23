@@ -1,8 +1,8 @@
 import React from 'react';
 
-let DisplayingCounter = ({value2}) => {
+let DisplayingCounter = ({value}) => {
     return (
-        <div>{value2}</div>
+        <div>{value}</div>
     );
 }
 
