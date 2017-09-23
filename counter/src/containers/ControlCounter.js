@@ -8,7 +8,7 @@ let ControlCounter = ({ value, increateNumber, decreateNumber }) => {
     return (
         <div>
             <Controller increateNumber={increateNumber} decreateNumber={decreateNumber} />
-            <DisplayingCounter value={value} />
+            <DisplayingCounter value2={value} />
         </div>
     );
 }
