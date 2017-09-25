@@ -4,7 +4,7 @@ import DisplayingCounter from "../components/DisplayingCounter";
 import Controller from "../components/controller";
 import {increateNumber, decreateNumber, resetCounter} from "../actions/ActionCounter";
 
-let ControlCounter = ({ valuePassToComps, tang, giam }) => {
+let ControlCounter = ({ valuePassToComps, tang, giam, reset}) => {
     return (
         <div>
             <Controller increateNumber={tang} decreateNumber={giam} resetCounter={reset}/>

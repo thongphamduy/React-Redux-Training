@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7fa896e5-f617-4094-9965-e991b0945272" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/counter/src/components/DisplayingCounter.js" afterPath="$PROJECT_DIR$/counter/src/components/DisplayingCounter.js" />
+=======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/counter/src/actions/ActionCounter.js" afterPath="$PROJECT_DIR$/counter/src/actions/ActionCounter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/counter/src/components/controller.js" afterPath="$PROJECT_DIR$/counter/src/components/controller.js" />
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/counter/src/containers/ControlCounter.js" afterPath="$PROJECT_DIR$/counter/src/containers/ControlCounter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/counter/src/reducers/rootReducer.js" afterPath="$PROJECT_DIR$/counter/src/reducers/rootReducer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,13 +22,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+=======
     <splitter split-orientation="horizontal" split-proportion="0.53076404">
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/counter/src/index.js">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+                <state relative-caret-position="119">
+=======
                 <state relative-caret-position="221">
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
                   <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
@@ -34,11 +45,19 @@
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
+          <file leaf-file-name="ActionCounter.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/counter/src/actions/ActionCounter.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="2" selection-end-column="10" />
+=======
           <file leaf-file-name="ActionCounter.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/counter/src/actions/ActionCounter.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="238">
                   <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
                   <folding />
                 </state>
               </provider>
@@ -47,8 +66,23 @@
           <file leaf-file-name="rootReducer.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/counter/src/reducers/rootReducer.js">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+                <state relative-caret-position="153">
+                  <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DisplayingCounter.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/counter/src/components/DisplayingCounter.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+=======
                 <state relative-caret-position="187">
                   <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
                   <folding />
                 </state>
               </provider>
@@ -57,18 +91,31 @@
           <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/counter/src/components/controller.js">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+                <state relative-caret-position="85">
+                  <caret line="5" column="75" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="75" />
+=======
                 <state relative-caret-position="153">
                   <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
+          <file leaf-file-name="ControlCounter.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/counter/src/containers/ControlCounter.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="170">
+                  <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+=======
           <file leaf-file-name="ControlCounter.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/counter/src/containers/ControlCounter.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="357">
                   <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -76,6 +123,18 @@
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="controller.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/counter/src/components/controller.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="75" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="75" />
+                  <folding />
+=======
           <file leaf-file-name="DisplayingCounter.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/counter/src/components/DisplayingCounter.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -98,6 +157,7 @@
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
                 </state>
               </provider>
             </entry>
@@ -124,8 +184,8 @@
         <option value="$PROJECT_DIR$/counter/src/index.js" />
         <option value="$PROJECT_DIR$/counter/src/actions/actionCounter.js" />
         <option value="$PROJECT_DIR$/counter/src/reducers/rootReducer.js" />
-        <option value="$PROJECT_DIR$/counter/src/components/DisplayingCounter.js" />
         <option value="$PROJECT_DIR$/counter/src/components/controller.js" />
+        <option value="$PROJECT_DIR$/counter/src/components/DisplayingCounter.js" />
         <option value="$PROJECT_DIR$/counter/src/containers/ControlCounter.js" />
         <option value="$PROJECT_DIR$/counter/src/actions/ActionCounter.js" />
       </list>
@@ -141,10 +201,18 @@
     <handled-path value="$PROJECT_DIR$/counter/node_modules" />
     <handled-path value="$PROJECT_DIR$/pluralsightdemo/node_modules" />
   </component>
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="550" />
+    <option name="y" value="-8" />
+    <option name="width" value="1074" />
+    <option name="height" value="735" />
+=======
   <component name="ProjectFrameBounds">
     <option name="x" value="22" />
     <option name="width" value="1759" />
     <option name="height" value="1017" />
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -256,16 +324,36 @@
       <updated>1505891244242</updated>
       <workItem from="1505891245407" duration="2857000" />
       <workItem from="1505916766842" duration="7781000" />
+<<<<<<< HEAD
+      <workItem from="1506004111244" duration="4300000" />
+      <workItem from="1506132411445" duration="34000" />
+=======
       <workItem from="1506004111244" duration="2828000" />
+<<<<<<< HEAD
       <workItem from="1506049647142" duration="7774000" />
+=======
+      <workItem from="1506049647142" duration="7198000" />
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
+>>>>>>> 7563304689cac32a5aac51f7630d6876783598f2
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="21240000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="14972000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="20664000" />
+>>>>>>> 7563304689cac32a5aac51f7630d6876783598f2
   </component>
   <component name="ToolWindowManager">
     <frame x="22" y="0" width="1759" height="1017" extended-state="0" />
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14061593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -299,6 +387,50 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/counter/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/counter/src/reducers/rootReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/counter/src/components/DisplayingCounter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/counter/src/components/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="75" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/counter/src/containers/ControlCounter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/counter/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -417,7 +549,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/counter/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="119">
           <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="14" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -425,6 +557,17 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/counter/src/components/DisplayingCounter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
     <entry file="file://$PROJECT_DIR$/counter/src/reducers/rootReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -433,6 +576,13 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/counter/src/actions/ActionCounter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="2" selection-end-column="10" />
+          <folding />
+=======
     <entry file="file://$PROJECT_DIR$/counter/src/containers/ControlCounter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -440,22 +590,36 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/counter/src/components/controller.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="85">
+          <caret line="5" column="75" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="75" />
+=======
         <state relative-caret-position="153">
           <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/counter/src/actions/ActionCounter.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="170">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+=======
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
+>>>>>>> 249931300a0e3606ccb6c19c916c460838bb1b53
         </state>
       </provider>
     </entry>
