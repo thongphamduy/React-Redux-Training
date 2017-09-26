@@ -1,6 +1,7 @@
 let todoId = 0;
 
 const TodoReducer = (state={todos: []}, action) => {
+    console.log(state.todos);
     switch (action.type) {
         case 'ADD_TODO':
             return Object.assign({}, state, {

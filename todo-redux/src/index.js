@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './containers/App';
+import App from './components/App';
 import TodoReducer from "./reducers/TodoReducer";
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';

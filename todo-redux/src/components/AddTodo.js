@@ -1,16 +1,16 @@
 import React from 'react';
 
-const AddTodo = () => {
+const AddTodo = ({onTodoAdd}) => {
     return (
-        <form onSubmit={handleAddTodo}>
+        <form onSubmit={e => {
+            e.preventDefault();
+            onTodoAdd(e);
+            console.log(e);
+        }}>
             <input type="text" name="AddTodo" placeholder="Add todo ..."/>
             <input type="submit"/>
         </form>
     );
 };
 
-const handleAddTodo = ({e, onTodoAdd}) => {
-    e.preventDefault();
-    {onTodoAdd}
-};
 export default AddTodo;
