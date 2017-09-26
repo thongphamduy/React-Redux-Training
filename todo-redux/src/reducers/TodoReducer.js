@@ -1,6 +1,6 @@
 let todoId = 0;
 
-const TodoReducer = (state={todos: []}, action) => {
+const TodoReducer = (state={todos: [{text: "itme 1", completed: false, id: 100}]}, action) => {
     console.log(state.todos);
     switch (action.type) {
         case 'ADD_TODO':
