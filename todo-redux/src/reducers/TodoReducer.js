@@ -1,15 +1,14 @@
-
-const TodoReducer = (state={todos: [{text: "itme 1", completed: false, id: 100}]}, action) => {
+const TodoReducer = (state={todos: []}, action) => {
     console.log(state.todos);
     switch (action.type) {
         case 'ADD_TODO':
             return Object.assign({}, state, {
                todos: [
-                   ...state,
+                   ...state.todos,
                    {
                        text: action.text,
                        completed: false,
-                       id: ++state.todos.id
+                       id: action.id
                    }
                ]
             });

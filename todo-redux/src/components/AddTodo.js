@@ -3,13 +3,14 @@ import { connect } from 'react-redux'
 import {addTodo} from "../actions/TodoAction";
 
 let AddTodo = ({onTodoAdd}) => {
+    let input;
     return (
         <form onSubmit={e => {
             e.preventDefault();
-            onTodoAdd(e.target.value);
-            console.log(e);
+            onTodoAdd(input.value);
+            input.value='';
         }}>
-            <input type="text" name="AddTodo" placeholder="Add todo ..."/>
+            <input type="text" name="AddTodo" placeholder="Add todo ..." ref = {node => {input = node}}/>
             <button type="submit">Add Todo</button>
         </form>
     );
@@ -18,7 +19,7 @@ let AddTodo = ({onTodoAdd}) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         onTodoAdd: (text) => {
-            dispatch(addTodo(text))
+            dispatch(addTodo(text));
         }
     }
 };
