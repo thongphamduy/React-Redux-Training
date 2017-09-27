@@ -1,4 +1,3 @@
-let todoId = 0;
 
 const TodoReducer = (state={todos: [{text: "itme 1", completed: false, id: 100}]}, action) => {
     console.log(state.todos);
@@ -10,7 +9,7 @@ const TodoReducer = (state={todos: [{text: "itme 1", completed: false, id: 100}]
                    {
                        text: action.text,
                        completed: false,
-                       id: todoId++
+                       id: ++state.todos.id
                    }
                ]
             });

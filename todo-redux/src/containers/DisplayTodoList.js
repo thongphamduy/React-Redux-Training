@@ -12,8 +12,5 @@ const mapDispatchToProps = (dispatch) => {
         }
     };
 };
-export default DisplayTodoList = connect(mapStateToProps, mapDispatchToProps)(TodoList);
-
-
-
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
 

@@ -1,9 +1,9 @@
 import React from 'react';
 
-let TodoItem = ({onTodoComplete, onTodoDelete, key, text, completed}) => {
+let TodoItem = ({onTodoComplete, onTodoDelete, text, completed}) => {
     return (
         <div>
-            <li key={key}>
+            <li >
                 {text}
             </li>
             <button onClick={onTodoDelete}>X</button>
