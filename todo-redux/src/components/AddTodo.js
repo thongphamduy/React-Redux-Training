@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import {addTodo} from "../actions/TodoAction";
 
-let AddTodo = ({onTodoAdd}) => {
+let AddTodo = () => {
     let input;
     return (
         <form onSubmit={e => {
@@ -16,14 +16,8 @@ let AddTodo = ({onTodoAdd}) => {
     );
 };
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        onTodoAdd: (text) => {
-            dispatch(addTodo(text));
-        }
-    }
+const mapDispatchToProps = {
+        onTodoAdd: addTodo
 };
 
-
-// export default AddTodo = connect(mapDispatchToProps)(AddTodo);
 export default AddTodo =connect(null, mapDispatchToProps)(AddTodo);

@@ -5,13 +5,17 @@ import {deleteTodo, toggleTodo} from '../actions/TodoAction'
 const mapStateToProps = state => ({
     todos: state.todos
 });
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         onTodoDelete: (id) => {
-//             dispatch(deleteTodo(id));
-//         }
-//     };
-// };
-export default connect(mapStateToProps, null)(TodoList);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        // onTodoDelete: (id) => {
+        //     dispatch(deleteTodo(id));
+        // },
+        onTodoComplete: (id) => {
+            dispatch(toggleTodo(id));
+        },
+        onTodoDelete: deleteTodo
+    };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
 
 

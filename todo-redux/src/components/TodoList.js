@@ -1,10 +1,12 @@
 import React from 'react';
 import TodoItem from "./TodoItem";
 
-const TodoList = ({onTodoDelete, todos}) => (
+const TodoList = ({onTodoDelete, todos, onTodoComplete}) => (
         <ul>
             {todos.map(todo =>
-                <TodoItem key={todo.id} text={todo.text} completed={todo.completed}/>
+                <TodoItem key={todo.id} text={todo.text}
+                          completed={todo.completed} onTodoDelete={onTodoDelete}
+                        onTodoComplete={onTodoComplete}/>
             )}
         </ul>
 );
