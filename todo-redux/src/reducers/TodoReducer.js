@@ -14,8 +14,8 @@ const TodoReducer = (state={todos: []}, action) => {
             });
         case 'TOGGLE_TODO':
             return Object.assign({}, state, {
-                todos: state.todos.map((todo, index) => {
-                    if(action.id === index) {
+                todos: state.todos.map((todo) => {
+                    if(todo.id === action.id) {
                         return Object.assign({}, todo, {
                             completed: !todo.completed
                         });
@@ -24,9 +24,11 @@ const TodoReducer = (state={todos: []}, action) => {
                 })
             });
         case 'DELETE_TODO':
-            return Object.assign({}, state, {
-                todos: state.splice(action.id,1)
-            });
+            const index = state.todos.findIndex(x=>x.id===action.id)
+            console.log("index of item to delete " + index)
+            return Object.assign({}, {
+                todos: state.todos.splice(index,1)
+            })
         default:
             return state;
     }
