@@ -5,8 +5,9 @@ const TodoList = ({onTodoDelete, todos, onTodoComplete}) => (
         <ul>
             {todos.map(todo =>
                 <TodoItem key={todo.id} text={todo.text}
-                          completed={todo.completed} onTodoDelete={()=>onTodoDelete(todo.id)}
-                        onTodoComplete={()=>onTodoComplete(todo.id)}/>
+                          completed={todo.completed} onTodoDelete={onTodoDelete}
+                        onTodoComplete={onTodoComplete}/>
+
             )}
         </ul>
 );

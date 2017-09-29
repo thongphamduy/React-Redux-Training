@@ -1,13 +1,12 @@
 import React from 'react';
-import DeleteTodoContainer from '../containers/DeleteTodoContainer'
 
-let TodoItem = (props) => {
+let TodoItem = ({ onTodoDelete, text, onTodoComplete, id}) => {
     return (
         <div>
-            <li onClick={props.onTodoComplete}>
-                {props.text}
+            <li onClick={()=>{onTodoComplete(id)}}>
+                {text}
             </li>
-            <button onClick={props.onTodoDelete}>X</button>
+            <button onClick={()=> {onTodoDelete(id)}}>X</button>
         </div>
     );
 };

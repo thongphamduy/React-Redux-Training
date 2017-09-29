@@ -3,7 +3,7 @@ const TodoReducer = (state={todos: []}, action) => {
     switch (action.type) {
         case 'ADD_TODO':
             return Object.assign({}, state, {
-               todos: [
+                   todos: [
                    ...state.todos,
                    {
                        text: action.text,
