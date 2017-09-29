@@ -7,13 +7,12 @@ const mapStateToProps = state => ({
 });
 const mapDispatchToProps = (dispatch) => {
     return {
-        // onTodoDelete: (id) => {
-        //     dispatch(deleteTodo(id));
-        // },
         onTodoComplete: (id) => {
             dispatch(toggleTodo(id));
         },
-        onTodoDelete: deleteTodo
+        onTodoDelete: (id) => {
+            dispatch(deleteTodo(id))
+        }
     };
 };
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
