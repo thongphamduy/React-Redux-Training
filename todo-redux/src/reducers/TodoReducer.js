@@ -24,7 +24,7 @@ const TodoReducer = (state={todos: []}, action) => {
                 })
             });
         case 'DELETE_TODO':
-            const index = state.todos.findIndex(x=>x.id===action.id)
+            const index = state.todos.findIndex(x=>(action.id===x.id))
             console.log("index of item to delete " + index)
             return Object.assign({}, {
                 todos: state.todos.splice(index,1)
