@@ -13,21 +13,22 @@ const TodoReducer = (state={todos: []}, action) => {
                ]
             });
         case 'TOGGLE_TODO':
+            const newTodos = state.todos.slice(0);
+            newTodos.map((todo)=>{
+                if(action.id === todo.id) {
+                    return (todo.completed = !todo.completed)
+                }
+            })
             return Object.assign({}, state, {
-                todos: state.todos.map((todo) => {
-                    if(todo.id === action.id) {
-                        return Object.assign({}, todo, {
-                            completed: !todo.completed
-                        });
-                    }
-                    return todo;
-                })
-            });
+                todos: newTodos
+            })
         case 'DELETE_TODO':
             const index = state.todos.findIndex(x=>(action.id===x.id))
             console.log("index of item to delete " + index)
-            return Object.assign({}, {
-                todos: state.todos.splice(index,1)
+            const todosCloned = state.todos.slice(0);
+            todosCloned.splice(index, 1);
+            return Object.assign({}, state, {
+                todos: todosCloned
             })
         default:
             return state;
