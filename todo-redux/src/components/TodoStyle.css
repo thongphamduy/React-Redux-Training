@@ -1,0 +1,9 @@
+:local(.AddTodo) {
+    width: 100%;
+}
+
+:local(.container) {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+}

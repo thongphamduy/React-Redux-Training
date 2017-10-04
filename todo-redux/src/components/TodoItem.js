@@ -1,17 +1,19 @@
 import React from 'react';
 
-export default  {
-    rowStyle: {
-        width: '500px'
-    }
+const rowStyle = {
+    width: "90%",
+    display: "inline-block",
+    padding: "4px"
 }
+
 let TodoItem = ({ onTodoDelete, text, onTodoComplete, id}) => {
     return (
         <div>
-            <li onClick={()=>{onTodoComplete(id)}} className="list-group-item" style={}>
+            <li onClick={()=>{onTodoComplete(id)}} className="list-group-item" style={rowStyle}>
                 {text}
+                <button onClick={()=> {onTodoDelete(id)}} className="btn btn-primary btn-danger pull-right" >X</button>
             </li>
-            <button onClick={()=> {onTodoDelete(id)}}>X</button>
+
         </div>
     );
 };
