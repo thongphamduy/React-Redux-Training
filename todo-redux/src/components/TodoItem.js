@@ -1,17 +1,12 @@
 import React from 'react';
-
-const rowStyle = {
-    width: "90%",
-    display: "inline-block",
-    padding: "4px"
-}
+import styles from './TodoStyle.css'
 
 let TodoItem = ({ onTodoDelete, text, onTodoComplete, id}) => {
     return (
         <div>
-            <li onClick={()=>{onTodoComplete(id)}} className="list-group-item" style={rowStyle}>
+            <li onClick={()=>{onTodoComplete(id)}} className="list-group-item">
                 {text}
-                <button onClick={()=> {onTodoDelete(id)}} className="btn btn-primary btn-danger pull-right" >X</button>
+                <button onClick={()=> {onTodoDelete(id)}} className={`btn btn-primary btn-danger pull-right ${styles.TodoItemBtn}`} >X</button>
             </li>
 
         </div>

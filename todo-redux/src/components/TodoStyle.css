@@ -1,14 +1,15 @@
-:local(.AddTodoForm) {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-
 :local(.App) {
-	width: 50%;
-	display: inline-block;
-	text-align: center;
+	display: block;
+
 }
 :local(.TodoList) {
-	
-};
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+:local(.TodoItemBtn) {
+	margin: 0px;
+	padding: 1px 4px;
+}
+

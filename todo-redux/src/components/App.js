@@ -5,7 +5,7 @@ import styles from './TodoStyle.css'
 
 const App = () => {
         return (
-            <div className={styles.App}>
+            <div className={`${styles.App}`}>
                 <AddTodo />
                 <DisplayTodoList />
             </div>

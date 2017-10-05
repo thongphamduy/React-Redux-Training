@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux'
 import {addTodo} from "../actions/TodoAction";
-import styles from "../components/TodoStyle.css"
+import styles from "./AddTodo.css"
 
 class AddTodoInput extends PureComponent {
 
