@@ -8,7 +8,9 @@ class AddTodoInput extends PureComponent {
 
     onSubmit = (e) => {
         e.preventDefault();
-
+        if(this.refs.inputText.value===""){
+            return
+        }
         this.props.onTodoAdd(this.refs.inputText.value);
         this.refs.inputText.value = '';
     }
