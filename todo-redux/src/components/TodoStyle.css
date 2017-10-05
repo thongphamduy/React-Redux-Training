@@ -1,9 +1,14 @@
-:local(.AddTodo) {
+:local(.AddTodoForm) {
     width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
-:local(.container) {
+:local(.App) {
 	width: 50%;
 	display: inline-block;
 	text-align: center;
 }
+:local(.TodoList) {
+	
+};

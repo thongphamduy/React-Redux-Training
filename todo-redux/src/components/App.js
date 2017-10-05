@@ -1,11 +1,11 @@
 import React from 'react';
-import AddTodo from './AddTodo';
+import AddTodo from '../containers/AddTodo';
 import DisplayTodoList from './../containers/DisplayTodoList';
 import styles from './TodoStyle.css'
 
 const App = () => {
         return (
-            <div className={styles.container}>
+            <div className={styles.App}>
                 <AddTodo />
                 <DisplayTodoList />
             </div>

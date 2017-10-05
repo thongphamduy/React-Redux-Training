@@ -1,11 +1,9 @@
 import React from 'react';
 import TodoItem from "./TodoItem";
+import styles from './TodoStyle.css'
 
-const listStyle = {
-        width: "50%"
-}
 const TodoList = ({onTodoDelete, todos, onTodoComplete}) => (
-        <ul className="list-group" style={listStyle}>
+        <ul className={`list-group ${styles.TodoList}`}>
             {todos.map(todo =>
                 <TodoItem key={todo.id} text={todo.text}
                           completed={todo.completed} onTodoDelete={()=> onTodoDelete(todo.id)}
