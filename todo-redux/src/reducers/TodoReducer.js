@@ -18,7 +18,7 @@ const TodoReducer = (state={todos: []}, action) => {
                 if(action.id === todo.id)
                     return (todo.completed = !todo.completed)
 
-            })
+            });
             return Object.assign({}, state, {
                 todos: newTodos
             })

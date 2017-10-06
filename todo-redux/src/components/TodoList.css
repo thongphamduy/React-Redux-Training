@@ -1,11 +1,9 @@
 :local(.App) {
 	display: block;
-
-}
-:local(.TodoList) {
 	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 
 :local(.TodoItemBtn) {
