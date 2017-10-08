@@ -15,7 +15,7 @@ function mapDispatchToProps (dispatch) {
             dispatch(deleteTodo(id))
         },
     };
-};
+}
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
 
 

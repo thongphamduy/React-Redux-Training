@@ -21,15 +21,15 @@ const TodoReducer = (state={todos: []}, action) => {
             });
             return Object.assign({}, state, {
                 todos: newTodos
-            })
+            });
         case 'DELETE_TODO':
-            const index = state.todos.findIndex(x=>(action.id===x.id))
-            console.log("index of item to delete " + index)
+            const index = state.todos.findIndex(x=>(action.id===x.id));
+            console.log("index of item to delete " + index);
             const todosCloned = state.todos.slice(0);
             todosCloned.splice(index, 1);
             return Object.assign({}, state, {
                 todos: todosCloned
-            })
+            });
         default:
             return state;
     }

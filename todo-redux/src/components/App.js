@@ -2,7 +2,7 @@ import React from 'react';
 import AddTodo from '../containers/AddTodo';
 import DisplayTodoList from './../containers/DisplayTodoList';
 import FilterContainer from '../containers/FilterContainer'
-import styles from './TodoList.css'
+import styles from '../styles/TodoList.css'
 
 const App = () => {
         return (

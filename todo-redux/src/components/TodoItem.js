@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './TodoList.css'
+import styles from '../styles/TodoList.css'
 
 let TodoItem = ({ onTodoDelete, text, onTodoComplete, id, completed}) => {
     let rowStyle = `list-group-item ${styles.TodoItem} `;
