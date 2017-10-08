@@ -1,13 +1,14 @@
-const FiterReducer = (state = {all: true, new: false, completed: false}, action) => {
+const FilterReducer = (state = {filter: 'FILTER_ALL'}, action) => {
+    console.log('current state: ' + state)
     switch (action.type) {
         case 'FILTER_COMPLETED':
-            return Object.assign({}, state, {all: false, new: false, completed: true})
+            return Object.assign({}, state, {filter: 'FILTER_COMPLETED'})
         case 'FILTER_NEW':
-            return Object.assign({}, state, {all: false, new: true, completed: false})
+            return Object.assign({}, state, {filter: 'FILTER_NEW'})
         case 'FILTER_ALL':
-            return Object.assign({}, state, {all: true, new: false, completed: false})
+            return Object.assign({}, state, {filter: 'FILTER_ALL'})
         default:
             return state
     }
 }
-export default FiterReducer;
+export default FilterReducer;

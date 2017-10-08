@@ -1,16 +1,23 @@
 import React, {Component} from 'react';
 import Filter from '../components/Filter'
+import {connect} from 'react-redux'
+import {FilterAll,FilterCompleted,FilterNew} from "../actions/FilterAction";
 
-class FilterContainer extends Component {
-    constructor (props){
-        super(props);
-    }
-
-    render () {
-        return (
-            <Filter/>
-        );
-    }
+const mapStateToProps = state => ({
+    filter: state.filter
+});
+const mapDispatchToProps = (dispatch) => {
+	return {
+		filterAll: () => {
+			dispatch(FilterAll())
+		},
+		filterCompleted: () => {
+			dispatch(FilterCompleted())
+		},
+		filterNew: () => {
+			dispatch(FilterNew())
+		}
+	}
 }
 
-export default FilterContainer;
+export default connect(mapStateToProps, mapDispatchToProps)(Filter);
