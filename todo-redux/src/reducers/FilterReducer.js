@@ -1,4 +1,4 @@
-const FilterReducer = (state = {filter: 'FILTER_ALL'}, action) => {
+const FilterReducer = (state = 'FILTER_ALL', action) => {
     switch (action.type) {
         case 'FILTER_COMPLETED':
             return Object.assign({}, state, {filter: 'FILTER_COMPLETED'});

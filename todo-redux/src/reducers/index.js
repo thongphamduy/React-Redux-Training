@@ -3,8 +3,8 @@ import FilterReducer from './FilterReducer'
 import TodoReducer from './TodoReducer'
 
 const Reducer = combineReducers({
-     FilterReducer,
-     TodoReducer
+     filter: FilterReducer,
+     todos: TodoReducer
 });
 
 export default Reducer
