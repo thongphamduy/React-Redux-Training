@@ -11,11 +11,15 @@ let TodoItem = ({ onTodoDelete, text, onTodoComplete, id, completed}) => {
         <div>
             <li onClick={()=>{onTodoComplete(id)}} className={rowStyle}>
                 {text}
-                <button onClick={()=> {onTodoDelete(id)}} className={`btn btn-primary btn-danger pull-right ${styles.TodoItemBtn}`} >X</button>
+                <button onClick={()=> {onTodoDelete(id)}} className={`btn btn-danger pull-right ${styles.TodoItemBtn}`}>
+                    <span className="glyphicon glyphicon-remove"></span>
+                </button>
+                <button onClick={()=> {onTodoDelete(id)}} className={`btn btn-info pull-right ${styles.TodoItemBtn}`}>
+                    <span className="glyphicon glyphicon-pencil"></span>
+                </button>
             </li>
 
         </div>
     );
 };
-
 export default TodoItem;
