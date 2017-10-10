@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import TodoList from '../components/TodoList';
 import {deleteTodo, toggleTodo} from '../actions/TodoAction'
+import {HandlePopup} from '../actions/PopupAction'
 
 const FilterTodoList = (list, filter) => {
     switch (filter) {
@@ -29,6 +30,9 @@ function mapDispatchToProps (dispatch) {
         onTodoDelete: (id) => {
             dispatch(deleteTodo(id))
         },
+        onTodoEdit: () => {
+            dispatch(HandlePopup())
+        }
     };
 }
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
