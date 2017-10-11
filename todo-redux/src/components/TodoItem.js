@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from '../styles/TodoList.css'
+import EditTodo from "./EditTodo";
 
-let TodoItem = ({ onTodoDelete, text, onTodoComplete, id, completed, onTodoEdit}) => {
+let TodoItem = ({ onTodoDelete, text, onTodoComplete, id, completed, isPopupEdit}) => {
     let rowStyle = `list-group-item ${styles.TodoItem} `;
     if (completed) {
         rowStyle += `${styles.TodoItemTextCompleted}`;
@@ -16,7 +17,14 @@ let TodoItem = ({ onTodoDelete, text, onTodoComplete, id, completed, onTodoEdit}
                 </button>
 
             </li>
-            <button onClick={()=> {onTodoEdit()}} className={`btn btn-info pull-right ${styles.TodoItemBtn}`}>
+            <button onClick={()=> {
+                console.log("clicked edit")
+                if(isPopupEdit){
+                    return (
+                        <EditTodo/>
+                    )
+                }
+            }} className={`btn btn-info pull-right ${styles.TodoItemBtn}`}>
                 <span className="glyphicon glyphicon-pencil"> </span>
             </button>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import TodoItem from "./TodoItem";
 import styles from '../styles/TodoList.css'
 
-const TodoList = ({onTodoDelete, todos, onTodoComplete,onTodoEdit}) => {
+const TodoList = ({onTodoDelete, todos, onTodoComplete,isPopupEdit}) => {
     console.log("list todo to render ", todos)
         return (
             <ul className={`list-group ${styles.TodoList}`}>
@@ -11,9 +11,8 @@ const TodoList = ({onTodoDelete, todos, onTodoComplete,onTodoEdit}) => {
                                   completed={todo.completed}
                                   onTodoDelete={()=> onTodoDelete(todo.id)}
                                   onTodoComplete={()=> onTodoComplete(todo.id)}
-                                  onTodoEdit={()=> onTodoEdit()}
+                                  isPopupEdit={isPopupEdit}
                         />
-
                     )}
             </ul>
         );

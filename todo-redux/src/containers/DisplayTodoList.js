@@ -19,7 +19,8 @@ const FilterTodoList = (list, filter) => {
 const mapStateToProps = state => {
     console.log('state', state);
     return {
-        todos: FilterTodoList(state.todos, state.filter)
+        todos: FilterTodoList(state.todos, state.filter),
+        isPopupEdit: state.isPopupEdit
     }
 };
 function mapDispatchToProps (dispatch) {
