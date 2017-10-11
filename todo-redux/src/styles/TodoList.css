@@ -6,15 +6,6 @@
 	text-align: center;
 }
 
-:local(.TodoItemBtn) {
-	margin: 0px 2px;
-	padding: 1px 4px;
-}
-
-:local(.TodoItemTextCompleted){
-	text-decoration: line-through;
-	background: lightgray;
-}
 :local(.TodoList li:hover){
 	background: lightgray;
 	cursor: pointer;

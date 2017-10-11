@@ -1,7 +1,7 @@
 import React from 'react'
 
-const EditTodo = (props) => {
-
+const EditTodo = () => {
+        console.log("dsdsdsdsd")
         return(
             <div className="modal fade" id="myModal" role="dialog">
                 <div className="modal-dialog">

@@ -1,9 +1,11 @@
 const HandlePopup = (state = false, action) => {
-    let tempt= state;
-    if(action.type === 'HANDLE_POPUP') {
-        return (!tempt)
-    } else {
-        return state
+    switch (action.type){
+        case 'SHOW_POPUP':
+            return true
+        case 'HIDE_POPUP':
+            return false
+        default:
+            return state
     }
 };
 

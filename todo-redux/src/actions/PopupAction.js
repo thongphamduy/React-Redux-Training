@@ -1,5 +1,10 @@
-export const HandlePopup = () => (
+export const ShowPopup = () => (
     {
-        type: 'HANDLE_POPUP'
+        type: 'SHOW_POPUP'
+    }
+);
+export const HidePopup = () => (
+    {
+        type: 'HIDE_POPUP'
     }
 );
