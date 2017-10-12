@@ -1,7 +1,6 @@
 import React from 'react';
 import TodoItem from "./TodoItem";
 import styles from '../styles/TodoList.css'
-import EditTodo from './EditTodo'
 
 const TodoList = ({onTodoDelete, todos, onTodoComplete,isPopupEdit,onTodoEdit,onHideEdit}) => {
     console.log("list todo to render ", todos)

@@ -26,20 +26,19 @@ let TodoItem = ({ onTodoDelete, text, onTodoComplete, id, completed, isPopupEdit
 
                 <Modal show={isPopupEdit} onHide={onHideEdit}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>Edit Todo</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <h4>Text in a modal</h4>
-                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                        <form>
+                            <input type="text" />
+                            <label>Remind me on a day </label>
+                            <input type="checkbox"  data-toggle="toggle"/>
 
-
-                        <hr />
-
-                        <h4>Overflowing text to show scroll behavior</h4>
-                        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                        </form>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button onClick={onHideEdit}>Close</Button>
+                        <Button onClick={onHideEdit} className="btn btn-default">Cancel</Button>
+                        <Button onClick={onHideEdit} className="btn btn-primary">Save</Button>
                     </Modal.Footer>
                 </Modal>
             </div>

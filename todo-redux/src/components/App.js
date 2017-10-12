@@ -3,7 +3,6 @@ import AddTodo from '../containers/AddTodo';
 import DisplayTodoList from './../containers/DisplayTodoList';
 import FilterContainer from '../containers/FilterContainer'
 import styles from '../styles/TodoList.css'
-import HanglePopup from '../containers/HanglePopup'
 
 const App = () => {
         return (
@@ -11,7 +10,6 @@ const App = () => {
                 <AddTodo />
                 <FilterContainer />
                 <DisplayTodoList />
-                <HanglePopup />
             </div>
         );
 };
