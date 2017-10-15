@@ -6,6 +6,17 @@ class ModalEditTodo extends Component {
         super(props)
     }
 
+    onSaveEdit=(e)=> {
+        e.preventDefault()
+        this.props.onSaveEdit({
+                text: this.refs.todo.value,
+                isRemind: this.refs.checkbox.value,
+                remindDate: this.refs.date.value,
+                location: this.refs.location.value,
+                note: this.refs.note.value
+        })
+    };
+
     render(){
         return(
             <Modal show={this.props.isPopupEdit} onHide={this.props.onHideEdit}>
@@ -20,9 +31,9 @@ class ModalEditTodo extends Component {
                         </div>
                         <div className="form-group">
                             <label htmlFor="Daypicker">Remind me on a day and location</label>
-                            <input type="checkbox"  data-toggle="toggle" defaultValue="false"/>
+                            <input type="checkbox"  data-toggle="toggle" defaultValue="false" ref="checkbox"/>
                             <div className="col-10">
-                                <input className="form-control" type="date" defaultValue="" id="example-date-input"/>
+                                <input className="form-control" type="date" defaultValue="" id="example-date-input" ref="date"/>
                             </div>
                         </div>
                         <div className="form-group">
@@ -38,7 +49,7 @@ class ModalEditTodo extends Component {
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={this.props.onHideEdit} className="btn btn-default">Cancel</Button>
-                    <Button onClick={this.props.onSaveEdit} className="btn btn-primary">Save</Button>
+                    <Button onClick={this.onSaveEdit} className="btn btn-primary">Save</Button>
                 </Modal.Footer>
             </Modal>
         )

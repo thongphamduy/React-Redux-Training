@@ -21,4 +21,4 @@ export const saveEditTodo = () => ({
     remindDate,
     location,
     note
-})
+});
