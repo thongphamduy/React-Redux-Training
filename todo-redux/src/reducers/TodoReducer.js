@@ -6,7 +6,11 @@ const TodoReducer = (state=[], action) => {
                 {
                     id: action.id,
                     text: action.text,
-                    completed: false
+                    completed: false,
+                    isRemind: false,
+                    remindDate: "",
+                    location: "",
+                    note: ""
                 }
             ];
         case 'TOGGLE_TODO':
@@ -22,7 +26,20 @@ const TodoReducer = (state=[], action) => {
             console.log("index of item to delete " + index);
             const todosCloned = state.slice(0);
             todosCloned.splice(index, 1);
-            return todosCloned
+            return todosCloned;
+        case 'SAVE_EDIT':
+            const todos1 = state.slice(0)
+            todos1.map(todo => {
+                if(action.id===todo.id)
+                    return ({
+                        text: action.text,
+                        isRemind: action.isRemind,
+                        remindDate: action.remindDate,
+                        location: action.location,
+                        note: action.note
+                    })
+            })
+            return todos1
         default:
             return state;
     }
