@@ -9,6 +9,7 @@ class ModalEditTodo extends Component {
 
     onSaveEdit=()=> {
          this.props.onSaveEdit({
+             id: this.props.editTodo.id,
              text: this.refs.todo.value,
              isRemind: this.refs.checkbox.value,
              remindDate: this.refs.date.value,
@@ -27,23 +28,27 @@ class ModalEditTodo extends Component {
                 <Modal.Body>
                     <form >
                         <div className="form-group">
-                            <input type="text" className="form-control" placeholder="Todo" defaultValue={this.props.todoToEdit.text}
+                            <input type="text" className="form-control" placeholder="Todo"
+                                   defaultValue={this.props.todoToEdit.text}
                                    ref="todo"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="Daypicker">Remind me on a day and location</label>
                             <input type="checkbox"  data-toggle="toggle" defaultValue="false" ref="checkbox"/>
                             <div className="col-10">
-                                <input className="form-control" type="date" defaultValue="" id="example-date-input" ref="date"/>
+                                <input className="form-control" type="date" defaultValue=""
+                                       id="example-date-input" ref="date"/>
                             </div>
                         </div>
                         <div className="form-group">
                             <label defaultValue="" htmlFor="location">Location</label>
-                            <input type="text" placeholder="Your Destination address" className="form-control" id="location" ref="location"/>
+                            <input type="text" placeholder="Your Destination address" className="form-control"
+                                   id="location" ref="location"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="note">Note</label>
-                            <textarea className="form-control" placeholder="Note..." rows="2" cols="40" id="note" ref="note" defaultValue=""/>
+                            <textarea className="form-control" placeholder="Note..." rows="2" cols="40"
+                                      id="note" ref="note" defaultValue=""/>
                         </div>
 
                     </form>

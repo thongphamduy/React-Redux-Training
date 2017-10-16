@@ -32,6 +32,7 @@ const TodoReducer = (state=[], action) => {
             let todos2 = todos1.map(todo => {
                 if(action.id===todo.id){
                     return {
+                        id: todo.id,
                         text: action.text,
                         isRemind: action.isRemind,
                         remindDate: action.remindDate,
