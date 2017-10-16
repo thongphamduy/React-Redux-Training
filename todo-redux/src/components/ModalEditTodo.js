@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Button, Modal,tooltip} from 'react-bootstrap';
+import { Button, Modal} from 'react-bootstrap';
 
 class ModalEditTodo extends Component {
     constructor(props){
@@ -17,17 +17,17 @@ class ModalEditTodo extends Component {
          });
         this.props.onHideEdit()
     };
-
     render(){
+        console.log(this.props.todoToEdit)
         return(
-            <Modal show={this.props.isPopupEdit} onHide={this.props.onHideEdit}>
+            <Modal show={this.props.editTodo.isShow} onHide={this.props.onHideEdit}>
                 <Modal.Header closeButton>
                     <Modal.Title>Edit Todo</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <form >
                         <div className="form-group">
-                            <input type="text" className="form-control" placeholder="Todo" defaultValue={this.props.todo.text}
+                            <input type="text" className="form-control" placeholder="Todo" defaultValue={this.props.todoToEdit.text}
                                    ref="todo"/>
                         </div>
                         <div className="form-group">

@@ -6,7 +6,7 @@ import HandlePopup from './HandlePopup'
 const Reducer = combineReducers({
      filter: FilterReducer,
      todos: TodoReducer,
-     isPopupEdit: HandlePopup
+     editTodo: HandlePopup
 });
 
 export default Reducer

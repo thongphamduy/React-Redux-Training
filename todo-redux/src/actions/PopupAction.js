@@ -1,10 +1,12 @@
-export const ShowPopup = () => (
+export const ShowPopup = (id) => (
     {
-        type: 'SHOW_POPUP'
+        type: 'SHOW_POPUP',
+        id
     }
 );
-export const HidePopup = () => (
+export const HidePopup = (id) => (
     {
-        type: 'HIDE_POPUP'
+        type: 'HIDE_POPUP',
+        id
     }
 );

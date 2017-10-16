@@ -1,10 +1,8 @@
 import React from 'react';
 import styles from '../styles/TodoItem.css'
 import "react-day-picker/lib/style.css";
-import ModalEditTodo from './ModalEditTodo'
 
-
-let TodoItem = ({onTodoDelete, onTodoComplete, id, todo, isPopupEdit,onTodoEdit,onHideEdit,onSaveEdit}) => {
+let TodoItem = ({onTodoDelete, onTodoComplete, id, todo,onTodoEdit}) => {
     let rowStyle = `list-group-item col-md-10`;
     if (todo.completed) {
         rowStyle += `${styles.TodoItemTextCompleted}`;
@@ -25,8 +23,7 @@ let TodoItem = ({onTodoDelete, onTodoComplete, id, todo, isPopupEdit,onTodoEdit,
                         <span className="glyphicon glyphicon-pencil"> </span>
                     </button>
                 </div>
-                <ModalEditTodo isPopupEdit={isPopupEdit} onHideEdit={onHideEdit} todo={todo}
-                               onSaveEdit={onSaveEdit}/>
+
             </div>
         </div>
     );

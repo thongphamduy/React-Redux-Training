@@ -1,25 +1,32 @@
 import React from 'react';
 import TodoItem from "./TodoItem";
 import styles from '../styles/TodoList.css'
+import ModalEditTodo from "./ModalEditTodo";
 
-const TodoList = ({onTodoDelete, todos, onTodoComplete,isPopupEdit,onTodoEdit,onHideEdit, onSaveEdit}) => {
-    console.log("list todo to render ", todos)
+const TodoList = ({onTodoDelete, todos, onTodoComplete, editTodo,onTodoEdit,onHideEdit, onSaveEdit}) => {
+
         return (
-            <ul className={`list-group ${styles.TodoList}`}>
+            <div>
+                <ul className={`list-group ${styles.TodoList}`}>
                     {todos.map(todo =>
                         <TodoItem key={todo.id} todo={todo}
-                                  isPopupEdit={isPopupEdit}
                                   onTodoDelete={()=> onTodoDelete(todo.id)}
                                   onTodoComplete={()=> onTodoComplete(todo.id)}
-                                  onTodoEdit={()=>onTodoEdit()}
-                                  onHideEdit={()=>onHideEdit()}
-                                  onSaveEdit={(myParams)=> {
-                                      const newParams = Object.assign({}, myParams, {id: todo.id});
-                                      onSaveEdit(newParams);
-                                  }}
+                                  onTodoEdit={()=>onTodoEdit(todo.id)}
+
                         />
                     )}
-            </ul>
+                </ul>
+                <ModalEditTodo editTodo={editTodo}
+                               todoToEdit={todos.find(todo=>todo.id===editTodo.id)}
+                               onHideEdit={onHideEdit}
+                               onSaveEdit={(myParams)=> {
+                                   const newParams = Object.assign({}, myParams, {id: editTodo.id});
+                                   onSaveEdit(newParams);
+                               }}
+                />
+            </div>
+
         );
 }
 

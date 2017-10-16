@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import TodoList from '../components/TodoList';
 import {deleteTodo, toggleTodo, saveEditTodo} from '../actions/TodoAction'
-import {HandlePopup, HidePopup, ShowPopup} from '../actions/PopupAction'
+import { HidePopup, ShowPopup} from '../actions/PopupAction'
 
 const FilterTodoList = (list, filter) => {
     switch (filter) {
@@ -20,7 +20,8 @@ const mapStateToProps = state => {
     console.log('state', state)
     return {
         todos: FilterTodoList(state.todos, state.filter),
-        isPopupEdit: state.isPopupEdit
+        editTodo: state.editTodo
+
     }
 };
 function mapDispatchToProps (dispatch) {
@@ -31,11 +32,11 @@ function mapDispatchToProps (dispatch) {
         onTodoDelete: (id) => {
             dispatch(deleteTodo(id))
         },
-        onTodoEdit: () => {
-            dispatch(ShowPopup())
+        onTodoEdit: (id) => {
+            dispatch(ShowPopup(id))
         },
-        onHideEdit: () => {
-            dispatch(HidePopup())
+        onHideEdit: (id) => {
+            dispatch(HidePopup(id))
         },
         onSaveEdit: (params)=> {
             dispatch(saveEditTodo(params))
