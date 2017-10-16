@@ -37,8 +37,8 @@ function mapDispatchToProps (dispatch) {
         onHideEdit: () => {
             dispatch(HidePopup())
         },
-        onSaveEdit: (text,id,isRemind,remindDate,location,note)=> {
-            dispatch(saveEditTodo(text,id,isRemind,remindDate,location,note))
+        onSaveEdit: (params)=> {
+            dispatch(saveEditTodo(params))
         }
     };
 }

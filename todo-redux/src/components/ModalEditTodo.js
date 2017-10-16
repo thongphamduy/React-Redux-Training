@@ -4,17 +4,18 @@ import { Button, Modal,tooltip} from 'react-bootstrap';
 class ModalEditTodo extends Component {
     constructor(props){
         super(props)
+        this.onSaveEdit=this.onSaveEdit.bind(this)
     }
 
-    onSaveEdit=(e)=> {
-        e.preventDefault()
-        this.props.onSaveEdit({
-                text: this.refs.todo.value,
-                isRemind: this.refs.checkbox.value,
-                remindDate: this.refs.date.value,
-                location: this.refs.location.value,
-                note: this.refs.note.value
-        })
+    onSaveEdit=()=> {
+         this.props.onSaveEdit({
+             text: this.refs.todo.value,
+             isRemind: this.refs.checkbox.value,
+             remindDate: this.refs.date.value,
+             location: this.refs.location.value,
+             note: this.refs.note.value
+         });
+        this.props.onHideEdit()
     };
 
     render(){

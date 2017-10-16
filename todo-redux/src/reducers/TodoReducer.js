@@ -29,17 +29,19 @@ const TodoReducer = (state=[], action) => {
             return todosCloned;
         case 'SAVE_EDIT':
             const todos1 = state.slice(0)
-            todos1.map(todo => {
-                if(action.id===todo.id)
-                    return ({
+            let todos2 = todos1.map(todo => {
+                if(action.id===todo.id){
+                    return {
                         text: action.text,
                         isRemind: action.isRemind,
                         remindDate: action.remindDate,
                         location: action.location,
                         note: action.note
-                    })
+                    }
+                } else {return todo}
+
             })
-            return todos1
+            return todos2
         default:
             return state;
     }

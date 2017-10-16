@@ -13,7 +13,10 @@ const TodoList = ({onTodoDelete, todos, onTodoComplete,isPopupEdit,onTodoEdit,on
                                   onTodoComplete={()=> onTodoComplete(todo.id)}
                                   onTodoEdit={()=>onTodoEdit()}
                                   onHideEdit={()=>onHideEdit()}
-                                  onSaveEdit={()=>onSaveEdit()}
+                                  onSaveEdit={(myParams)=> {
+                                      const newParams = Object.assign({}, myParams, {id: todo.id});
+                                      onSaveEdit(newParams);
+                                  }}
                         />
                     )}
             </ul>

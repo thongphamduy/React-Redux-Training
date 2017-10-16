@@ -13,7 +13,7 @@ export const deleteTodo = (id) => ({
     type: "DELETE_TODO",
     id
 });
-export const saveEditTodo = () => ({
+export const saveEditTodo = ({ text,id,isRemind,remindDate,location,note }) => ({
     type: 'SAVE_EDIT',
     text,
     id,
