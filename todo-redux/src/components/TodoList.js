@@ -25,7 +25,7 @@ const TodoList = ({onTodoDelete, todos, onTodoComplete, editTodo,
                 </ul>
 
                 {editTodo.isShow ? <ModalEditTodo editTodo={editTodo}
-                                todoToEdit={todoItem}
+                                                  todoToEdit={todoItem}
                                 onHideEdit={onHideEdit}
                                 onSaveEdit={onSaveEdit}
                 />: null}

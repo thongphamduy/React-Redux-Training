@@ -2,8 +2,8 @@ import React from 'react';
 import styles from '../styles/TodoItem.css'
 import "react-day-picker/lib/style.css";
 
-let TodoItem = ({onTodoDelete, onTodoComplete, id, todo,onTodoEdit, key}) => {
-    let rowStyle = `list-group-item col-md-10`;
+let TodoItem = ({onTodoDelete, onTodoComplete, id, todo,onTodoEdit}) => {
+    let rowStyle = `list-group-item col-md-10 `;
     if (todo.completed) {
         rowStyle += `${styles.TodoItemTextCompleted}`;
         console.log(rowStyle);
