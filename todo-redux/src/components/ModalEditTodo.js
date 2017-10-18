@@ -5,8 +5,15 @@ class ModalEditTodo extends Component {
     constructor(props){
         super(props)
         this.onSaveEdit=this.onSaveEdit.bind(this)
+        this.updateCheckbox=this.updateCheckbox.bind(this)
+        this.state = {
+            isChecked: this.props.todoToEdit.isRemind
+        }
     }
 
+    updateCheckbox = ()=> {
+        this.setState({isChecked: !this.state.isChecked})
+    }
     onSaveEdit=()=> {
          this.props.onSaveEdit({
              id: this.props.editTodo.id,
@@ -35,7 +42,7 @@ class ModalEditTodo extends Component {
                         </div>
                         <div className="form-group">
                             <label htmlFor="Daypicker">Remind me on a day and location</label>
-                            <input type="checkbox"  checked={this.props.todoToEdit.isRemind} ref="checkbox"/>
+                            <input type="checkbox"  checked={this.state.isChecked} onChange={this.updateCheckbox} ref="checkbox"/>
                             <div className="col-10">
                                 <input className="form-control" type="date" defaultValue={this.props.todoToEdit.remindDate}
                                        id="example-date-input" ref="date"/>
